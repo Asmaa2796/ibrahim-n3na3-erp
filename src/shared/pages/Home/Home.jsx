@@ -51,6 +51,7 @@ const Home = () => {
               </h5>
               <small className="text-secondary text-xs d-block" style={{textAlign:i18n.language === "en" && "left"}}>{t("home.last_week")}</small>
               <PieChartWithNeedle/>
+              
               <h5 className="fw-bold mt-3">164</h5>
               <span className="text-xs text-secondary d-block" style={{textAlign:i18n.language === "en" && "left"}}>{t("home.total_number_of_customers")}</span>
             </div>

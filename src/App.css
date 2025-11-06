@@ -1336,22 +1336,29 @@ button:has(.sq-btn) {
   .stat_card .plus-number {
     right: 15% !important;
   }
-  .navbar .form_search {display: none;}
 
   [dir="ltr"] .stat_card .plus-number {
     left: 15% !important;
   }
-   .chart-div {width: 200px !important;}
-  .chart-perc {transform: translate(-39%, 6px);}
+  .navbar .form_search {display: none;}
 }
-
-@media(max-width:400px) {
+.main_content .apexchartsotahenlp {margin: auto !important;}
+.chart-perc {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, 20px);
+    font-size: 14px;
+    color: rgb(119, 119, 119);
+}
+@media(max-width:480px) {
   .navbar .container {
     flex-direction: column;
     justify-content: end !important;
     align-items: start !important;
   }
-
+  .chart-div {width: 200px !important;}
+  .chart-perc {transform: translate(-28%, 3px) !important;}
   [dir="ltr"] .navbar .actions li:nth-child(1) {
     text-align: left;
   }

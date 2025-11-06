@@ -55,7 +55,7 @@ const PieChartWithNeedle = () => {
   {
     breakpoint: 480,
     options: {
-      chart: { width: 180 },
+      chart: { width: 167 },
       plotOptions: {
         pie: {
           donut: { size: "60%" },
@@ -73,17 +73,7 @@ const PieChartWithNeedle = () => {
     <div className="chart-div" style={{ position: "relative", width: 290, margin: "auto" }}>
       <Chart options={options} series={series} type="donut" height={300} />
 
-      <div
-        style={{
-          position: "absolute",
-          top: "35%",
-          left: "50%",
-          transform: "translate(-50%, 20px)",
-          fontSize: "14px",
-          color: "#777",
-        }}
-        className="chart-perc"
-      > 
+      <div className="chart-perc"> 
         <div className="text-secondary text-sm">{t("sidenav.new_customer")}</div>
         <h4 className="text-center text-dark my-2">14%</h4>
       </div>
