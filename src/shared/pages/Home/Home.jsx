@@ -49,10 +49,10 @@ const Home = () => {
                   </div>
                 </div>
               </h5>
-              <small className="text-secondary text-xs">{t("home.last_week")}</small>
+              <small className="text-secondary text-xs d-block" style={{textAlign:i18n.language === "en" && "left"}}>{t("home.last_week")}</small>
               <PieChartWithNeedle/>
               <h5 className="fw-bold">164</h5>
-              <span className="text-xs text-secondary">{t("home.total_number_of_customers")}</span>
+              <span className="text-xs text-secondary d-block" style={{textAlign:i18n.language === "en" && "left"}}>{t("home.total_number_of_customers")}</span>
             </div>
           </div>
           <div className="col-xl-6 col-lg-6 col-lg-6 col-12">
@@ -98,17 +98,17 @@ const Home = () => {
               <div className="stats">
                 <div className="row">
                   <div className="col-xl-4 col-lg-4 col-lg-6 col-12">
-                    <b className="text-sm fw-normal d-block mb-2 main-color">{t("home.insurance_documents")}</b>
+                    <b className="text-sm fw-normal d-block mb-2 main-color" style={{textAlign:i18n.language === "en" && "left"}}>{t("home.insurance_documents")}</b>
                     <h5 className="text-md">$145.69</h5>
                     <div className="percentage"><div className="perc1"></div></div>
                   </div>
                   <div className="col-xl-4 col-lg-4 col-lg-6 col-12">
-                    <b className="text-sm fw-normal d-block mb-2 text-info">{t("home.licenses")}</b>
+                    <b className="text-sm fw-normal d-block mb-2 text-info" style={{textAlign:i18n.language === "en" && "left"}}>{t("home.licenses")}</b>
                     <h5 className="text-md">$156.34</h5>
                     <div className="percentage"><div className="perc2"></div></div>
                   </div>
                   <div className="col-xl-4 col-lg-4 col-lg-6 col-12">
-                    <b className="text-sm fw-normal d-block mb-2 text-danger">{t("home.union")}</b>
+                    <b className="text-sm fw-normal d-block mb-2 text-danger" style={{textAlign:i18n.language === "en" && "left"}}>{t("home.union")}</b>
                     <h5 className="text-md">$94.19</h5>
                     <div className="percentage"><div className="perc3"></div></div>
                   </div>
@@ -147,7 +147,7 @@ const Home = () => {
                   </div>
                 </div>
               </h5>
-              <h4>
+              <h4 style={{textAlign:i18n.language === "en" && "left"}}>
                 87% <small className="highlight-green text-sm">25.8%</small>
               </h4>
               <RevenuesCharts />
@@ -218,7 +218,7 @@ const Home = () => {
                   </div>
                 </div>
               </h5>
-              <h4>
+              <h4 style={{textAlign:i18n.language === "en" && "left"}}>
                 12% <small className="text-danger text-sm">12.2%</small>
               </h4>
               <ExpensesChart />
@@ -303,7 +303,7 @@ const Home = () => {
               <div className="d-flex justify-content-between align-items-center my-3">
                 <div>
                   <span className="text-dark d-block text-sm">$12,47k</span>
-                  <small className="text-secondary d-block text-xs">
+                  <small style={{textAlign:i18n.language === "en" && "left"}} className="text-secondary d-block text-xs">
                     الجيزة
                   </small>
                 </div>
@@ -314,7 +314,7 @@ const Home = () => {
               <div className="d-flex justify-content-between align-items-center my-3">
                 <div>
                   <span className="text-dark d-block text-sm">$7,51k</span>
-                  <small className="text-secondary d-block text-xs">
+                  <small style={{textAlign:i18n.language === "en" && "left"}} className="text-secondary d-block text-xs">
                     الفيوم
                   </small>
                 </div>
@@ -325,7 +325,7 @@ const Home = () => {
               <div className="d-flex justify-content-between align-items-center my-3">
                 <div>
                   <span className="text-dark d-block text-sm">$4,57k</span>
-                  <small className="text-secondary d-block text-xs">
+                  <small style={{textAlign:i18n.language === "en" && "left"}} className="text-secondary d-block text-xs">
                     بني سويف
                   </small>
                 </div>
@@ -336,7 +336,7 @@ const Home = () => {
               <div className="d-flex justify-content-between align-items-center my-3">
                 <div>
                   <span className="text-dark d-block text-sm">$3,50k</span>
-                  <small className="text-secondary d-block text-xs">
+                  <small style={{textAlign:i18n.language === "en" && "left"}} className="text-secondary d-block text-xs">
                     الإسكندرية
                   </small>
                 </div>
@@ -347,7 +347,7 @@ const Home = () => {
               <div className="d-flex justify-content-between align-items-center my-3">
                 <div>
                   <span className="text-dark d-block text-sm">$2,33k</span>
-                  <small className="text-secondary d-block text-xs">طنطا</small>
+                  <small style={{textAlign:i18n.language === "en" && "left"}} className="text-secondary d-block text-xs">طنطا</small>
                 </div>
                 <div>
                   <span className="text-danger text-sm">25.2%</span>
@@ -356,7 +356,7 @@ const Home = () => {
               <div className="d-flex justify-content-between align-items-center my-3">
                 <div>
                   <span className="text-dark d-block text-sm">$9,41k</span>
-                  <small className="text-secondary d-block text-xs">
+                  <small style={{textAlign:i18n.language === "en" && "left"}} className="text-secondary d-block text-xs">
                     المنيا
                   </small>
                 </div>
@@ -367,7 +367,7 @@ const Home = () => {
               <div className="d-flex justify-content-between align-items-center my-3">
                 <div>
                   <span className="text-dark d-block text-sm">$12,41k</span>
-                  <small className="text-secondary d-block text-xs">
+                  <small style={{textAlign:i18n.language === "en" && "left"}} className="text-secondary d-block text-xs">
                     البحر الأحمر
                   </small>
                 </div>

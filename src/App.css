@@ -677,8 +677,10 @@ button:has(.sq-btn) {
 .sidenav li a.dropdown-toggle {
   font-weight: bold;
   transition: all .3s ease-in-out;
+  white-space: normal;
+  display: flex;
+  align-items: center;
 }
-
 .sidenav li.active a.dropdown-toggle {
   background-color: #7367F0B2;
   color: var(--basic-color) !important;
@@ -1084,7 +1086,15 @@ button:has(.sq-btn) {
   font-family: 'LeagueSpartan', sans-serif !important;
   direction: ltr !important;
 }
-
+[dir='ltr'] {
+  .form_search svg {
+    position: absolute;
+    left: 0;
+    right: unset !important;
+    top: 5px;
+  }
+  .form_search input {margin-left: 20px;margin-right: 0;}
+}
 [dir="ltr"] .sidenav li {
   text-align: left;
 }
