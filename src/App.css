@@ -759,7 +759,7 @@ button:has(.sq-btn) {
 
   .closeNav {
     display: block;
-    color: var(--basic-color);
+    color: var(--main-color);
     position: absolute;
     left: 10px;
     top: 10px;
@@ -1336,10 +1336,13 @@ button:has(.sq-btn) {
   .stat_card .plus-number {
     right: 15% !important;
   }
+  .navbar .form_search {display: none;}
 
   [dir="ltr"] .stat_card .plus-number {
     left: 15% !important;
   }
+   .chart-div {width: 200px !important;}
+  .chart-perc {transform: translate(-39%, 6px);}
 }
 
 @media(max-width:400px) {

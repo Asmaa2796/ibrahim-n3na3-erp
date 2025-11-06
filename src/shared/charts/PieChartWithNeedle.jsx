@@ -40,24 +40,37 @@ const PieChartWithNeedle = () => {
       colors: ["#fff"], // white gap
     },
     responsive: [
-      {
-        breakpoint: 480,
-        options: {
-          chart: {
-            width: 180,
-          },
-          legend: {
-            position: "bottom",
-          },
+  {
+    breakpoint: 1200,
+    options: {
+      chart: { width: 260 },
+    },
+  },
+  {
+    breakpoint: 768,
+    options: {
+      chart: { width: 220 },
+    },
+  },
+  {
+    breakpoint: 480,
+    options: {
+      chart: { width: 180 },
+      plotOptions: {
+        pie: {
+          donut: { size: "60%" },
         },
       },
-    ],
+    },
+  },
+],
+
   };
 
   const series = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
 
   return (
-    <div style={{ position: "relative", width: 290, margin: "auto" }}>
+    <div className="chart-div" style={{ position: "relative", width: 290, margin: "auto" }}>
       <Chart options={options} series={series} type="donut" height={300} />
 
       <div
@@ -69,6 +82,7 @@ const PieChartWithNeedle = () => {
           fontSize: "14px",
           color: "#777",
         }}
+        className="chart-perc"
       > 
         <div className="text-secondary text-sm">{t("sidenav.new_customer")}</div>
         <h4 className="text-center text-dark my-2">14%</h4>
