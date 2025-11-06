@@ -1,0 +1,48 @@
+.div-bg {
+    padding: 20px;
+    border-radius: 8px;
+    margin-block: 10px;
+    border: 1px solid #ddd;
+    box-shadow: var(--box-shadow)
+}
+.main_content h5 {color: #646161;}
+.main_content h5 .dropdown-toggle::after {display: none;}
+.totals .span {
+    border-radius: 4px;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    font-size: small;
+    padding-top: 4px;
+}
+.custom-small {
+    color: var(--highlight-green);
+    background-color: rgb(144 198 144 / 23%);
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+.custom-flex {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.stats {
+    padding: 20px 10px;
+    border: 1px solid #eee;
+    border-radius: 4px;padding: 20px 10px;
+    border: 1px solid #eee;
+    border-radius: 4px;
+}
+.percentage {
+    height: 6px;
+    background-color: #eee;
+    border-radius: 25px;
+    overflow: hidden;
+}
+.percentage div {height: 100%;}
+.perc1 {width: 50%;background-color: var(--main-color);}
+.perc2 {width: 50%;background-color: #00BAD1;}
+.perc3 {width: 50%;background-color: #FF4C51}
