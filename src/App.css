@@ -1094,6 +1094,12 @@ button:has(.sq-btn) {
     top: 5px;
   }
   .form_search input {margin-left: 20px;margin-right: 0;}
+  .content_wrapper .table thead th:first-child {
+    border-radius: 15px 0px 0 0;
+}
+  .content_wrapper .table thead th:last-child {
+    border-radius: 0px 15px 0 0;
+}
 }
 [dir="ltr"] .sidenav li {
   text-align: left;
